@@ -1,5 +1,5 @@
 #!/bin/sh
-:ulimit -n 1000000
+ulimit -n 1000000
 exec erl -pa ebin edit deps/*/ebin  -boot start_sasl \
     -sname wsgame$1 \
     -s wsgame \
