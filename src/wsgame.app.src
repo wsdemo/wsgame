@@ -1,0 +1,9 @@
+%% -*- erlang -*-
+{application, wsgame,
+ [{description, "Web Socket demo Game"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {mod, {'wsgame_app', []}},
+  {env, [{docroot, "priv/www/"}, {port, 8080}, {max_connections, 100}]},
+  {applications, [kernel, stdlib, crypto, cowboy]}]}.

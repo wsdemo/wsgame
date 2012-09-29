@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title>IT Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="body ">
+
+    <h1 class="title hidden-phone hidden-tablet" style="display: none;">
+        IT <br /> Game
+    </h1>
+
+    <div class="b-menu">
+
+      <div class="container" style="z-index: 1; position: relative;">
+        <div class="row">
+
+          <div class="span12">
+            <button type="button" class="btn btn-primary j-btn-play j-new-game" data-loading-text="Loading...">Create game</button>
+
+            <div class="btn-group input-append" style="display: inline-block; margin: 0px;">
+              <input type="text" class="j-text-guid" placeholder="Set game id…" style="margin: 0px;">
+              <button class="btn btn-primary j-btn-dropdown-load dropdown-toggle" data-toggle="dropdown" style="border-radius: 0px;"><span class="caret"></span></button>
+              <button class="btn btn-primary j-btn-load" style="border-radius: 0px 3px 3px 0px;">Join game</button>
+
+              <ul class="dropdown-menu b-game-list j-game-list">
+                <li><a class="j-new-game">New game</a></li>
+              </ul>
+            </div>
+
+            <div class="statistic j-statistic"></div>
+            <button style="float:right; display: none; margin-right: -70px;" type="button" class="btn btn-primary j-btn-exit" data-loading-text="Loading...">Exit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="b-game-info span3">
+        <div class="info-title">Information:</div>
+        <div>
+          It's real time strategy. <br /> The main aim is survive.
+        </div>
+        <div class="divider"></div>
+        <div>Use keyboard for navigation</div>
+        <div>
+          <button type="button" class="btn btn-mini j-move-up" style="margin-left: 33px; margin-bottom: 3px;"><i class="icon-arrow-up"></i></button>
+        </div>
+        <div>
+
+          <button type="button" class="btn btn-mini j-move-left"><i class="icon-arrow-left"></i></button>
+          <button type="button" class="btn btn-mini j-move-down"><i class="icon-arrow-down"></i></button>
+          <button type="button" class="btn btn-mini j-move-right"><i class="icon-arrow-right"></i></button>
+
+        </div>
+
+
+        <div class="divider"></div>
+        <div class="chip-style j-chip"></div>
+        <div class="text"> &ndash; it's you</div>
+        <div class="divider"style="border: none; height: 0px;"></div>
+        <div class="chip-style chip-style-red j-chip"></div>
+        <div class="text"> &ndash; it's your enemy</div>
+
+      </div>
+
+      <div class="b-game-board span8"></div>
+
+
+    </div>
+
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/application.js"></script>
+</body>
+</html>
